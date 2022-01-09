@@ -3,7 +3,10 @@ package academy.learnprogramming;
 public class Main {
 
     public static void main(String[] args) {
+        // char type can only store a single character
         char myChar = 'D';
+
+        // According Unicode for letter D
         char myUnicodeChar = '\u0044';
         System.out.println(myChar);
         System.out.println(myUnicodeChar);
