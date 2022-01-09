@@ -29,18 +29,19 @@ public class Main {
         // char
         // boolean
         String myString = "This is a string";
-        System.out.println("myStringing is equal to " + myString);
+        System.out.println("myString is equal to " + myString);
 
         myString += ", and this is more.";
-        System.out.println("myStringing is equal to " + myString);
+        System.out.println("myString is equal to " + myString);
 
         myString += " \u00A9 2019";
-        System.out.println("myStringing is equal to " + myString);
+        System.out.println("myString is equal to " + myString);
 
         String numberString = "250.55";
         numberString = numberString + "49.95";
         System.out.println(numberString);
 
+        // String type treats all addition operators with another type as textual appendage.
         String lastString = "10";
         int myInt = 50;
         lastString = lastString + myInt;
