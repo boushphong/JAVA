@@ -18,15 +18,14 @@ public class Animal {
 
     public void eat() {
         System.out.println("Animal.eat() called");
-    }
-
-    public void jump() {
-        System.out.println("Animal.jump() called");
-    }
-
-    public void move() {
 
     }
+
+    public void move(int speed) {
+        System.out.println("Animal.move() called.  Animal is moving at " +speed);
+
+    }
+
 
     public String getName() {
         return name;

@@ -1,6 +1,5 @@
 package academy.learnprogramming;
 
-// Inherit the Animal Class
 public class Dog extends Animal {
 
     private int eyes;
@@ -9,10 +8,7 @@ public class Dog extends Animal {
     private int teeth;
     private String coat;
 
-    // Since we inherit the brain and body from Animal class as the default parameters.
-    // Adding them to the constructor is redundant.
     public Dog(String name, int size, int weight, int eyes, int legs, int tail, int teeth, String coat) {
-        // 1 brain and 1 body as default parameters.
         super(name, 1, 1, size, weight);
         this.eyes = eyes;
         this.legs = legs;
@@ -32,15 +28,24 @@ public class Dog extends Animal {
         super.eat();
     }
 
-    public void jump() {
-        super.jump();
+    public void walk() {
+        System.out.println("Dog.walk() called");
+        super.move(5);
     }
 
-    public void wag() {
-        System.out.println("Wagging tail");
+    public void run() {
+        System.out.println("Dog.run() called");
+        move(10);
+
     }
 
-    public void bark(){
-        System.out.println("Barking");
+    private void moveLegs(int speed) {
+        System.out.println("Dog.moveLegs() called");
+    }
+    @Override
+    public void move(int speed) {
+        System.out.println("Dog.move() called");
+        moveLegs(speed);
+        super.move(speed);
     }
 }
