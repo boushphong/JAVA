@@ -1,0 +1,45 @@
+package academy.learnprogramming;
+
+public class Rectangle {
+    private int x;
+    private int y;
+    private int width;
+    private int height;
+
+    // Constructor Chaining
+    // 1st constructor
+    public Rectangle() {
+        this(0,0); // Calls 2nd constructor
+    }
+
+    // 2nd constructor
+    public Rectangle(int width, int height) {
+        this(0, 0, width, height); // calls 3rd constructor
+    }
+
+    // 3rd constructor
+    public Rectangle(int x, int y, int width, int height) {
+        // initialize variables
+        this.x = x;
+        this.y = y;
+        this.width = width;
+        this.height = height;
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+}

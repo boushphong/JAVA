@@ -21,6 +21,7 @@ public class Dog extends Animal {
         System.out.println("Dog.chew() called");
     }
 
+    // Method Overriding
     @Override
     public void eat() {
         System.out.println("Dog.eat() called");
