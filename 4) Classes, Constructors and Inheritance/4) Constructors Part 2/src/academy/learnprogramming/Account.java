@@ -8,6 +8,7 @@ public class Account {
     private String customerPhoneNumber;
 
     public Account() {
+        // this() to set default parameters.
         this("56789", 2.50, "Default name", "Default address", "default phone");
         System.out.println("Empty constructor called");
     }

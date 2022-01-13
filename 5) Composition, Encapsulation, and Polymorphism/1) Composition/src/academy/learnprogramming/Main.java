@@ -15,5 +15,12 @@ public class Main {
         thePC.getMonitor().drawPixelAt(1500, 1200, "red"); // Get the monitor class within The PC's instance variable then use its method
         thePC.getMotherboard().loadProgram("Windows 10.0"); // Get the motherboard class within The PC's instance variable then use its method
         thePC.getTheCase().pressPowerButton(); // Get the case class within The PC's instance variable then use its method
+
+        // Dimension of the case
+
+        Dimensions dimension = thePC.getTheCase().getDimensions();
+        System.out.println(dimension.getDepth());
+        System.out.println(dimension.getHeight());
+        System.out.println(dimension.getHeight());
     }
 }

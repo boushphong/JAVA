@@ -9,7 +9,6 @@ public class GroceryList {
         groceryList.add(item);
     }
 
-
     public ArrayList<String> getGroceryList() {
         return groceryList;
     }
@@ -24,10 +23,10 @@ public class GroceryList {
     public void modifyGroceryItem(String currentItem, String newItem) {
         int position = findItem(currentItem);
         if(position >= 0) {
-            modifyGroceryItem(position, newItem);
+            modifyGroceryItem(position, newItem); // Calls the private function below
         }
-
     }
+
     private void modifyGroceryItem(int position, String newItem) {
         groceryList.set(position, newItem);
         System.out.println("Grocery item " + (position+1) + " has been modified.");
@@ -36,7 +35,7 @@ public class GroceryList {
     public void removeGroceryItem(String item) {
         int position = findItem(item);
         if(position >= 0) {
-            removeGroceryItem(position);
+            removeGroceryItem(position); // Calls the private function below
         }
     }
 
@@ -44,7 +43,7 @@ public class GroceryList {
         groceryList.remove(position);
     }
 
-    private int findItem(String searchItem) {
+    public int findItem(String searchItem) {
         return groceryList.indexOf(searchItem);
     }
 
@@ -53,7 +52,6 @@ public class GroceryList {
         if(position >=0) {
             return true;
         }
-
         return false;
     }
 }

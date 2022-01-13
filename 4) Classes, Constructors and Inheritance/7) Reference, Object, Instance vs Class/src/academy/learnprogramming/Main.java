@@ -16,10 +16,16 @@ public class Main {
         System.out.println(anotherHouse.getColor()); // yellow
 
         House greenHouse = new House("green");
-        anotherHouse = greenHouse;
+        anotherHouse = greenHouse; // This variable no longer references to the blueHouse object.
 
-        System.out.println(blueHouse.getColor()); // yellow
+        System.out.println(blueHouse.getColor()); // still yellow
         System.out.println(greenHouse.getColor()); // green
         System.out.println(anotherHouse.getColor()); // green
+
+        anotherHouse.setColor("Red");
+
+        System.out.println(blueHouse.getColor()); // still yellow
+        System.out.println(greenHouse.getColor()); // Red
+        System.out.println(anotherHouse.getColor()); // Red
     }
 }

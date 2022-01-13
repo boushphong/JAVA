@@ -10,5 +10,9 @@ public class Main {
         dog.walk();
 //        dog.run();
 
+        Fish fish = new Fish("Dory", 1,15, 10, 2, 4);
+        fish.eat();
+        fish.move(25);
+
     }
 }

@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
         Dog A = new Dog();
         A.bark();
-        A.bark(5);
+        A.bark(5); // Bark 5 times.
 
         GermanShepherd B = new GermanShepherd();
         B.bark();
@@ -21,9 +21,9 @@ Must have different parameters.
 May have different return types.
 May have different access modifiers (private, protected, public).
 May throw different exceptions.
- */
 
-/*
+-------------------------------------------------------------------------------
+
 Method Overriding:
 Used to override a behaviour which the class has inherited from the parent class.
 Always in two classes that have a child-parent os IS-A relationship.

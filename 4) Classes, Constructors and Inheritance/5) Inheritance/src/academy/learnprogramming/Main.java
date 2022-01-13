@@ -10,5 +10,8 @@ public class Main {
         dog.jump();
         dog.wag();
         dog.bark();
+
+        // Can't be called since the chew method's access modifier is set to private.
+        // Dog.chew();
     }
 }

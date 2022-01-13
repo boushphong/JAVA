@@ -6,6 +6,7 @@ public class Rectangle {
     private int width;
     private int height;
 
+    // this() is to call a constructor from another overloaded constructor in the same class
     // Constructor Chaining
     // 1st constructor
     public Rectangle() {

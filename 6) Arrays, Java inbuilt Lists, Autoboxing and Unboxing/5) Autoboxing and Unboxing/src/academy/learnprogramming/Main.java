@@ -26,8 +26,11 @@ public class Main {
         int[] intArray = new int[10];
 
         // ArrayList only take Class as its element type, so you can't add use ArrayList<int> since int isn't a Class.
+        // ArrayList<int> intArray = new ArrayList<int>(); <- Invalid assignment statement.
         ArrayList<String> strArrayList = new ArrayList<String>();
         strArrayList.add("Tim");
+        strArrayList.add("Phong");
+        System.out.println(strArrayList.get(0)); // Access the first element of an array.
 
         // ArrayList<int> intArrayList = new ArrayList<int>();
         ArrayList<IntClass> intClassArrayList = new ArrayList<IntClass>();
@@ -46,6 +49,7 @@ public class Main {
             System.out.println(i + " --> " + intArrayList.get(i).intValue());
         }
 
+        // Integer Class
         Integer myIntValue = 56; // Integer.valueOf(56);
         int myInt = myIntValue.intValue(); // myIntValue.intValue();
 

@@ -1,7 +1,7 @@
 package academy.learnprogramming;
 
 class Movie {
-    private String name;
+    private final String name;
 
     public Movie(String name) {
         this.name = name;
@@ -70,6 +70,7 @@ class Forgettable extends Movie {
     No plot method
     */
 }
+
 
 
 public class Main {

@@ -15,7 +15,6 @@ public class Main {
 
         }
 
-
     public static int[] getIntegers(int capacity) {
         int[] array = new int[capacity];
         System.out.println("Enter " + capacity + " integer values:\r");
@@ -36,7 +35,6 @@ public class Main {
 //        for (int i=0; i<array.length; i++){
 //            sortedArray[i] = array[i];
 //        }
-
         int[] sortedArray = Arrays.copyOf(array, array.length);
 
         boolean flag = true;
