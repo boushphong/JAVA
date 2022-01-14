@@ -18,7 +18,7 @@ public class Main {
 
         // Basic Array Operations
 
-	    int[] myIntArray = {1,2,3,4,5,6,7,8,9,10}; // Initialize an array with known elements.
+	int[] myIntArray = {1,2,3,4,5,6,7,8,9,10}; // Initialize an array with known elements.
         double[] myDoubleArray = new double[10]; // Initialize an array with unknown elements.
 
         int[] myIntArray2 = new int[10];
