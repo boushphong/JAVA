@@ -69,6 +69,8 @@ class GFG2 {
         System.out.println("Area of rectangle: "
                 + rect.area());
 
+        rect.draw();
+
         // Creating the Objects of circle class
         Shape2 circle = new Circle2(2);
 
