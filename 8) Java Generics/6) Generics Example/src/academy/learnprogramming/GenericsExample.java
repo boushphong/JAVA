@@ -1,6 +1,5 @@
 package academy.learnprogramming;
 
-import java.sql.Array;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,6 +27,7 @@ public class GenericsExample {
 
         List<Double> doubleList = new ArrayList<>();
         doubleList.add(3.00);
+        doubleList.add(6.00);
         printList(doubleList);
 
     }
@@ -38,7 +38,7 @@ public class GenericsExample {
     }
 
     // A generic method that takes in multiple objects of any type
-//    private static <T, V> T instead of void to return also the according type
+    // private static <T, V> T instead of void to return also the according type
     private static <T, V> void multipleShout (T thingToShout, V otherThingToShout) { // Generics Method
         System.out.println(thingToShout + "!!!!!");
         System.out.println(otherThingToShout + "!!!!!");
