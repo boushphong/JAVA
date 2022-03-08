@@ -29,7 +29,7 @@ public class Dog extends Animal {
     public void eat() {
         System.out.println("Dog.eat() called");
         chew();
-        super.eat();
+        super.eat(); // Calling the method from the parent class
     }
 
     public void jump() {
