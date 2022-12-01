@@ -15,7 +15,7 @@ public class Main {
         int score2 = calculateScore(true, 800, levelCompleted, bonus);
         System.out.println("Score 2: " + score2);
 
-        int score3 = calculateScore(true, 1000, 10, 120);
+        int score3 = new Main().calculateScore(true, 1000, 10, 120);
         System.out.println("Score 3: " + score3);
     }
 

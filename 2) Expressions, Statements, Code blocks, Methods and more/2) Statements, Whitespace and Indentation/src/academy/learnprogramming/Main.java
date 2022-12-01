@@ -10,6 +10,6 @@ public class Main {
 
         // Whitespace and Indentation
         // This line below is valid in Java
-        int myVariable2 = 60; myVariable2++; myVariable2--; System.out.println("This is a test:" + myVariable2);
+        int myVariable2 = 60; myVariable2++; myVariable2--; myVariable2--; System.out.println("This is a test:" + myVariable2);
     }
 }

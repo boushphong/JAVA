@@ -1,7 +1,5 @@
 package academy.learnprogramming;
 
-import java.util.Locale;
-
 public class Car {
     private int doors;
     private int wheels;

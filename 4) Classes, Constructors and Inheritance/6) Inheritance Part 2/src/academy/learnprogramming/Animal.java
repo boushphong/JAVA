@@ -8,12 +8,16 @@ public class Animal {
     private int size;
     private int weight;
 
-    public Animal(String name, int brain, int body, int size, int weight) {
-        this.name = name;
+    public Animal(int brain, int body, int size, int weight) {
+        this.name = getRandomName();
         this.brain = brain;
         this.body = body;
         this.size = size;
         this.weight = weight;
+    }
+
+    private String getRandomName() {
+        return "aRandomName";
     }
 
     public void eat() {
@@ -23,7 +27,6 @@ public class Animal {
 
     public void move(int speed) {
         System.out.println("Animal.move() called.  Animal is moving at " +speed);
-
     }
 
 
