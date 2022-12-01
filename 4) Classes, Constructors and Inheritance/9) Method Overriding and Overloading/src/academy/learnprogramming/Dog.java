@@ -11,6 +11,10 @@ class Dog {
             System.out.println("woof");
         }
     }
+
+    public void bark(String input) {
+        System.out.println(input);
+    }
 }
 
 class GermanShepherd extends Dog {
@@ -19,5 +23,10 @@ class GermanShepherd extends Dog {
     @Override
     public void bark() {
         System.out.println("woof woof woof");
+    }
+
+    @Override
+    public void bark(String input) {
+        System.out.println(input);
     }
 }

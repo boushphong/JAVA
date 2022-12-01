@@ -11,7 +11,7 @@ public class Main {
         System.out.println("myIntValue = " + myIntValue + ", anotherIntValue = " + anotherIntValue);
 
         String myStringValue = "hello";
-        String anotherStringValue = myStringValue;
+        String anotherStringValue = myStringValue; // only reference to the value. not memory address
         myStringValue = "Fred";
         System.out.println("myStringValue = " + myStringValue + ", anotherStringValue = " + anotherStringValue);
 

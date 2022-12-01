@@ -3,7 +3,7 @@ package academy.learnprogramming;
 public class Printer {
     private int tonerLevel;
     private int pagesPrinted;
-    private boolean duplex;
+    private final boolean duplex;
 
     public Printer(int tonerLevel, boolean duplex) {
         if(tonerLevel >-1 && tonerLevel <=100) {

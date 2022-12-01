@@ -3,7 +3,7 @@ package academy.learnprogramming;
 import java.util.ArrayList;
 
 public class GroceryList {
-    private ArrayList<String> groceryList = new ArrayList<String>();
+    private final ArrayList<String> groceryList = new ArrayList<String>();
 
     public void addGroceryItem(String item) {
         groceryList.add(item);
@@ -49,7 +49,7 @@ public class GroceryList {
 
     public boolean onFile(String searchItem) {
         int position = findItem(searchItem);
-        if(position >=0) {
+        if (position >=0) {
             return true;
         }
         return false;

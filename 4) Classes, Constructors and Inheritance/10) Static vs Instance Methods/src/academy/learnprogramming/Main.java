@@ -5,6 +5,7 @@ class Calculator {
         System.out.println("sum = " + (a + b));
     }
 }
+
 /*
 Static methods are declared using a static modifier.
 Static methods can't access instance methods and instance variables directly
