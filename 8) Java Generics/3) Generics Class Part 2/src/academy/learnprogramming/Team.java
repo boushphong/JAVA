@@ -10,8 +10,7 @@ public class Team<T extends Player> {
     int lost = 0;
     int tied = 0;
 
-
-    private ArrayList<T> members = new ArrayList<>();
+    private final ArrayList<T> members = new ArrayList<>();
 
     public Team(String name) {
         this.name = name;

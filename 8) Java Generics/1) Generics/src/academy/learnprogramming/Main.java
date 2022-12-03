@@ -18,6 +18,7 @@ public class Main {
         itemsInInteger.add(3);
 
         printDoubledIntegers(itemsInInteger);
+        printInterger(itemsInInteger);
     }
 
     private static void printDoubled(ArrayList n) {
@@ -29,6 +30,12 @@ public class Main {
     private static void printDoubledIntegers(ArrayList<Integer> n) {
         for(Object i : n) {
             System.out.println((Integer) i * 5);
+        }
+    }
+
+    private static void printInterger(ArrayList<Integer> n) {
+        for (Integer i: n) {
+            System.out.println(i);
         }
     }
 }

@@ -14,5 +14,9 @@ public class Main {
         timsPhone.callPhone(24565);
         timsPhone.answer();
 
+        System.out.println("\nPhong's Phone\n");
+        ITelephone phongsPhone = new MobilePhone(834568886);
+        phongsPhone.dial(123456);
+        System.out.println(phongsPhone.getClass());
     }
 }

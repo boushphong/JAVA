@@ -42,7 +42,9 @@ class Circle2 implements Shape2 {
     int radius;
 
     // constructor
-    Circle2(int radius) { this.radius = radius; }
+    Circle2(int radius) {
+        this.radius = radius;
+    }
 
     @Override
     public void draw() {
