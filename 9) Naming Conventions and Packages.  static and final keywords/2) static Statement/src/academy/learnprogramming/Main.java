@@ -30,5 +30,6 @@ public class Main {
     // The restriction is purely on static methods accessing non-static fields or methods in its own Class
     public static int multiply(int number) { // Without the keyword static here, error would occur
         return number * multiplier;
+        // same as return number * new Main().multiplier;
     }
 }

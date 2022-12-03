@@ -35,6 +35,7 @@ public class Team<T extends Player> implements Comparable<Team<T>> {
         return this.members.size();
     }
 
+    // can only match aganst Team of the same sport player (Type T)
     public void matchResult(Team<T> opponent, int ourScore, int theirScore) {
 
         String message;
@@ -61,6 +62,7 @@ public class Team<T extends Player> implements Comparable<Team<T>> {
         return (won * 2) + tied;
     }
 
+    // can only compare to team of the same sport players Team<T>
     @Override
     public int compareTo(Team<T> team) {
         if(this.ranking() > team.ranking()) {
@@ -72,26 +74,3 @@ public class Team<T extends Player> implements Comparable<Team<T>> {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
