@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 // Generic Type
 public class Team<T extends Player> {
-    private String name;
+    private final String name;
     int played = 0;
     int won = 0;
     int lost = 0;

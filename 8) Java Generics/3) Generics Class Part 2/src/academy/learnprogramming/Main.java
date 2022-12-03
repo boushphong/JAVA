@@ -7,13 +7,15 @@ public class Main {
         BaseballPlayer pat = new BaseballPlayer("Pat");
         SoccerPlayer beckham = new SoccerPlayer("Beckham");
 
+//      Team<T extends Player> -> T only accepts A class that extends the Player Class
         Team<FootballPlayer> adelaideCrows = new Team<>("Adelaide Crows");
         adelaideCrows.addPlayer(joe);
-//        adelaideCrows.addPlayer(pat);
-//        adelaideCrows.addPlayer(beckham);
+//      adelaideCrows.addPlayer(pat);
+//      adelaideCrows.addPlayer(beckham);
 
         System.out.println(adelaideCrows.numPlayers());
 
+//      same as ... = new Team<BaseballPlayer>("Chicago Cubs");
         Team<BaseballPlayer> baseballTeam = new Team<>("Chicago Cubs");
         baseballTeam.addPlayer(pat);
 
@@ -27,6 +29,7 @@ public class Main {
         Team<FootballPlayer> hawthorn= new Team<>("Hawthorn");
         Team<FootballPlayer> fremantle= new Team<>("Fremantle");
 
+        // can only match against the same type of sport team. Team<T>
         hawthorn.matchResult(fremantle, 1, 0);
         hawthorn.matchResult(adelaideCrows, 3, 8);
 
