@@ -7,8 +7,6 @@ public class ExtendedPassword extends Password {
         super(password);
         this.decryptedPassword = password;
     }
-
-
     // The code below cannot override the parent Class method since it was set to final
 //    @Override
 //    public void storePassword() {

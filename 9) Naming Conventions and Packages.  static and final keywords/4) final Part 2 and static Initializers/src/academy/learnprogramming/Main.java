@@ -24,6 +24,5 @@ public class Main {
         SIBTest test = new SIBTest(); // Execute static block first then constructor
         test.someMethod();
         System.out.println("Owner is " + SIBTest.owner);
-
     }
 }
